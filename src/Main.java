@@ -199,6 +199,16 @@ void main() {
 
     System.out.println( "the sum of numbers is " + total);
 
-
+// >> let loop thrugh a multitaimentional array, and print each element
+    int matrix[][] = {
+        {12,51,85,23},
+        {19,51,81,21},
+        {52,21,81,73}
+    };
+    for(int a =0; a < matrix; a++){
+        for(int z =0; z < matrix[a].length; a++){
+            System.out.println(matrix[a][z]);     // a is looping thrugh the rows while z is loop
+    };
+    };
 
 };
