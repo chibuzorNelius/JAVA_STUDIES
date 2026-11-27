@@ -210,5 +210,113 @@ void main() {
             System.out.println(matrix[a][z]);     // a is looping thrugh the rows while z is loop
     };
     };
+import java.util.ArrayList;
+import java.util.Iterator;
+
+void main() {
+    int[] scores;
+
+    scores = new int[5];
+
+    scores[0] = 80;
+    scores[1] = 90;
+    scores[2] = 75;
+    scores[3] = 85;
+    scores[4] = 95;
+
+    System.out.println(scores[0]);
+
+
+
+
+    int[] scores2 = {80, 90, 75, 85, 95};
+
+    System.out.println(scores2[3]);
+
+    int[][] scoresMulti = {
+            {80, 75, 90},
+            {85, 95, 88},
+            {70, 80, 75}
+    };
+
+    System.out.println(scoresMulti[0][0]);
+    System.out.println(scoresMulti[1][2]);
+    System.out.println(scoresMulti[2][1]);
+
+
+    System.out.println("===== For loop " +
+            "iterating the array =====");
+    for(int i = 0; i < scores.length; i++){
+        System.out.println(scores[i]);
+    }
+
+    int total = 0;
+
+    for(int i = 0; i < scores.length; i++){
+        total += scores[i];
+    }
+
+    System.out.println("The sum of elements " +
+            "in the scores array is " + total);
+
+    for(int score : scores){
+        System.out.println(score);
+    }
+
+    for(int i = 0; i < scoresMulti.length; i++){
+        for(int j = 0; j < scoresMulti[i].length; j++){
+            System.out.print(scoresMulti[i][j] + " ");
+        }
+        System.out.println();
+
+    }
+
+    ArrayList<String> students = new ArrayList<>();
+    students.add("John");
+    students.add("Mary");
+    students.add("Peter");
+
+    System.out.println(students.get(0));
+
+    students.set(1, "Sarah");
+    students.remove("Peter");
+
+    System.out.println(students);
+
+    System.out.println(students.size());
+    System.out.println(students.contains("John"));
+
+
+    students.add("Peter");
+    students.add("Sarah");
+    students.add("David");
+
+    for(int i = 0; i < students.size(); i++){
+        System.out.println(students.get(i));
+    }
+
+    System.out.println("===========");
+
+    for(String student : students){
+        System.out.println(student);
+    }
+
+    ArrayList<String> fruits = new ArrayList<>();
+
+    fruits.add("Apple");
+    fruits.add("Orange");
+    fruits.add("Banana");
+    fruits.add("Mango");
+    fruits.add("Pineapple");
+
+    Iterator<String> iterator = fruits.iterator();
+
+    while(iterator.hasNext()){
+        String fruit = iterator.next();
+
+        System.out.println(fruit);
+    }
+
+}
 
 };
