@@ -174,3 +174,12 @@ int[][] manyScores = {
  System.out.println(star)
 }
 this method is similar to python which is easier (python > for i in score: print(i)
+
+======STRING METHODS====
+1) .length() = counts characters in a sting
+2) .charAt(3) = to get a charter of a string by index
+3) .toupperCase() = convert to upperCase 
+4) .tolowerCase() = convert to lowerCase
+5) .contains("string")
+6) . replace("main string","the replacement") = here instead of replacing the value, it keepsl the old value and create a now one with your changes. this is because in java it's not easy to change a string. and this is where (StringBuilder class ) come to play.
+
